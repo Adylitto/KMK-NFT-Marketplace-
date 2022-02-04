@@ -1,0 +1,20 @@
+{
+  "../components/layout/Header.js -> ../../components/elements/ThemeSwitch": {
+    "id": "../components/layout/Header.js -> ../../components/elements/ThemeSwitch",
+    "files": [
+      "static/chunks/components_elements_ThemeSwitch_js.js"
+    ]
+  },
+  "../components/layout/HeaderLanding.js -> ../../components/elements/ThemeSwitch": {
+    "id": "../components/layout/HeaderLanding.js -> ../../components/elements/ThemeSwitch",
+    "files": [
+      "static/chunks/components_elements_ThemeSwitch_js.js"
+    ]
+  },
+  "index.js -> react-modal-video": {
+    "id": "index.js -> react-modal-video",
+    "files": [
+      "static/chunks/node_modules_react-modal-video_lib_index_js.js"
+    ]
+  }
+}
