@@ -15,7 +15,7 @@ function HeaderLanding() {
                         <div className="col-xl-12">
                             <div className="navigation">
                                 <nav className="navbar navbar-expand-lg navbar-light">
-                                    <div className="brand-logo resize-50">
+                                    <div className="brand-logo">
                                         <Link href="/"><a>
                                             <img src="/images/logo.webp" alt="" className="logo-primary" />
                                             <img src="/images/logo.webp" alt="" className="logo-white" />
