@@ -2,43 +2,18 @@ exports.id = 152;
 exports.ids = [152];
 exports.modules = {
 
-/***/ 638:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 7645:
+/***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
-var __webpack_unused_export__;
 
-__webpack_unused_export__ = ({
+Object.defineProperty(exports, "__esModule", ({
     value: true
-});
-__webpack_unused_export__ = noSSR;
+}));
 exports["default"] = dynamic;
+exports.noSSR = noSSR;
 var _react = _interopRequireDefault(__webpack_require__(6689));
 var _loadable = _interopRequireDefault(__webpack_require__(5832));
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-const isServerSide = "undefined" === 'undefined';
-function noSSR(LoadableInitializer, loadableOptions) {
-    // Removing webpack and modules means react-loadable won't try preloading
-    delete loadableOptions.webpack;
-    delete loadableOptions.modules;
-    // This check is necessary to prevent react-loadable from initializing on the server
-    if (!isServerSide) {
-        return LoadableInitializer(loadableOptions);
-    }
-    const Loading = loadableOptions.loading;
-    // This will only be rendered on the server side
-    return ()=>/*#__PURE__*/ _react.default.createElement(Loading, {
-            error: null,
-            isLoading: true,
-            pastDelay: false,
-            timedOut: false
-        })
-    ;
-}
 function dynamic(dynamicOptions, options) {
     let loadableFn = _loadable.default;
     let loadableOptions = {
@@ -57,10 +32,10 @@ function dynamic(dynamicOptions, options) {
         loadableOptions.loader = ()=>dynamicOptions
         ;
     // Support for having import as a function, eg: dynamic(() => import('../hello-world'))
-    } else if (typeof dynamicOptions === 'function') {
+    } else if (typeof dynamicOptions === "function") {
         loadableOptions.loader = dynamicOptions;
     // Support for having first argument being options, eg: dynamic({loader: import('../hello-world')})
-    } else if (typeof dynamicOptions === 'object') {
+    } else if (typeof dynamicOptions === "object") {
         loadableOptions = {
             ...loadableOptions,
             ...dynamicOptions
@@ -72,12 +47,9 @@ function dynamic(dynamicOptions, options) {
         ...options
     };
     const suspenseOptions = loadableOptions;
-    if (true) {
-        // Error if react root is not enabled and `suspense` option is set to true
-        if ( true && suspenseOptions.suspense) {
-            // TODO: add error doc when this feature is stable
-            throw new Error(`Invalid suspense option usage in next/dynamic. Read more: https://nextjs.org/docs/messages/invalid-dynamic-suspense`);
-        }
+    // Error if Fizz rendering is not enabled and `suspense` option is set to true
+    if ( true && suspenseOptions.suspense) {
+        throw new Error(`Invalid suspense option usage in next/dynamic. Read more: https://nextjs.org/docs/messages/invalid-dynamic-suspense`);
     }
     if (suspenseOptions.suspense) {
         return loadableFn(suspenseOptions);
@@ -91,7 +63,7 @@ function dynamic(dynamicOptions, options) {
         delete loadableOptions.loadableGenerated;
     }
     // support for disabling server side rendering, eg: dynamic(import('../hello-world'), {ssr: false})
-    if (typeof loadableOptions.ssr === 'boolean') {
+    if (typeof loadableOptions.ssr === "boolean") {
         if (!loadableOptions.ssr) {
             delete loadableOptions.ssr;
             return noSSR(loadableFn, loadableOptions);
@@ -99,6 +71,34 @@ function dynamic(dynamicOptions, options) {
         delete loadableOptions.ssr;
     }
     return loadableFn(loadableOptions);
+}
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const isServerSide = "undefined" === "undefined";
+function noSSR(LoadableInitializer, loadableOptions) {
+    // Removing webpack and modules means react-loadable won't try preloading
+    delete loadableOptions.webpack;
+    delete loadableOptions.modules;
+    // This check is necessary to prevent react-loadable from initializing on the server
+    if (!isServerSide) {
+        return LoadableInitializer(loadableOptions);
+    }
+    const Loading = loadableOptions.loading;
+    // This will only be rendered on the server side
+    return ()=>/*#__PURE__*/ _react.default.createElement(Loading, {
+            error: null,
+            isLoading: true,
+            pastDelay: false,
+            timedOut: false
+        })
+    ;
+}
+if (typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) {
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
 } //# sourceMappingURL=dynamic.js.map
 
 
@@ -107,7 +107,7 @@ function dynamic(dynamicOptions, options) {
 /***/ 5152:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(638)
+module.exports = __webpack_require__(7645)
 
 
 /***/ })

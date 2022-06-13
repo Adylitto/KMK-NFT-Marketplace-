@@ -1,0 +1,26 @@
+{
+  "../components/layout/Header.js -> ../../components/elements/ThemeSwitch": {
+    "id": 2986,
+    "files": [
+      "static/chunks/2986.bf995dd9caa47947.js"
+    ]
+  },
+  "../components/layout/HeaderDemo.js -> ../elements/ThemeSwitch": {
+    "id": 2986,
+    "files": [
+      "static/chunks/2986.bf995dd9caa47947.js"
+    ]
+  },
+  "../components/layout/HeaderLanding.js -> ../../components/elements/ThemeSwitch": {
+    "id": 2986,
+    "files": [
+      "static/chunks/2986.bf995dd9caa47947.js"
+    ]
+  },
+  "index.js -> react-modal-video": {
+    "id": 1239,
+    "files": [
+      "static/chunks/1239.c778844bf6a4612a.js"
+    ]
+  }
+}

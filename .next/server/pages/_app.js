@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 7573:
+/***/ 2035:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -26,13 +26,13 @@ const external_redux_namespaceObject = require("redux");
 const external_redux_thunk_namespaceObject = require("redux-thunk");
 var external_redux_thunk_default = /*#__PURE__*/__webpack_require__.n(external_redux_thunk_namespaceObject);
 ;// CONCATENATED MODULE: ./redux/actions/type.js
-const CHART = 'CHART';
+const CHART = "CHART";
 
 ;// CONCATENATED MODULE: ./redux/reducers/lineChart.js
 
 const initialState = {
     expenses: {
-        name: 'ETH Price',
+        name: "ETH Price",
         // youtube: [65, 59, 80, 81, 56, 55, 40,80, 81, 56, 55, 40],
         facebook: [
             0,
@@ -68,7 +68,7 @@ const LineChart = (state = initialState, action)=>{
 
 const doughnutChart_initialState = {
     statistics: {
-        name: 'Statistics',
+        name: "Statistics",
         data: [
             33,
             33
@@ -93,7 +93,7 @@ const DoughnutChart = (state = doughnutChart_initialState, action)=>{
 
 const lineInvestment_initialState = {
     investment: {
-        name: 'Investment',
+        name: "Investment",
         data: [
             15,
             26,
@@ -153,14 +153,25 @@ const store = (0,external_redux_namespaceObject.createStore)(root, store_initial
 
 
 function MyApp({ Component , pageProps  }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_redux_.Provider, {
-            store: redux_store,
-            children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
-                ...pageProps
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Head, {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("title", {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx("link", {
+                        href: "https://fonts.googleapis.com/css2?family=Inter&display=optional",
+                        rel: "stylesheet"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(external_react_redux_.Provider, {
+                store: redux_store,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                    ...pageProps
+                })
             })
-        })
-    }));
+        ]
+    });
 }
 /* harmony default export */ const _app = (MyApp);
 
@@ -188,7 +199,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(7573));
+var __webpack_exports__ = (__webpack_exec__(2035));
 module.exports = __webpack_exports__;
 
 })();

@@ -137,6 +137,57 @@
 
 
 
+### [9.1.1](https://www.github.com/reactstrap/reactstrap/compare/v9.1.0...v9.1.1) (2022-06-08)
+
+
+### Bug Fixes
+
+* **DropdownMenu:** add types to updateOnSelect ([e5cd524](https://www.github.com/reactstrap/reactstrap/commit/e5cd52445ee5247a6408c75a212009f345f7270e))
+
+## [9.1.0](https://www.github.com/reactstrap/reactstrap/compare/v9.0.4...v9.1.0) (2022-06-08)
+
+
+### Features
+
+* **CloseButton:** add close button ([9e656f5](https://www.github.com/reactstrap/reactstrap/commit/9e656f50c4d35cb8e32b826316f8761e80af9c3e))
+
+
+### Bug Fixes
+
+* **#2411:** remove scroll from body when modal open ([9d71faa](https://www.github.com/reactstrap/reactstrap/commit/9d71faada222f67683bf19acece3c20b3364a6df))
+* add a flag to DropdownMenu for Popper update ([74a9e4e](https://www.github.com/reactstrap/reactstrap/commit/74a9e4ef5ad8cfdf4e1ab2b9509a0e4ca52c8886))
+
+### [9.0.4](https://www.github.com/reactstrap/reactstrap/compare/v9.0.3...v9.0.4) (2022-06-02)
+
+
+### Bug Fixes
+
+* **#2393:** captions visible twice ([c20fa93](https://www.github.com/reactstrap/reactstrap/commit/c20fa9397ea09811ed2b4da33b136f2aa1e98957))
+* **#2515:** Add missing Typescript exports for Placeholders ([f9e0dfa](https://www.github.com/reactstrap/reactstrap/commit/f9e0dfab37ae0ae2c2183964fa78dc863af320f3))
+* **#2521:** fix `form-check-label`/`form-label` class on Label ([6aee08b](https://www.github.com/reactstrap/reactstrap/commit/6aee08b3bebdbdb1320c4f18382b28d5bc474dd7))
+* **Offcanvas:** make types match existing `direction` prop ([6e60f08](https://www.github.com/reactstrap/reactstrap/commit/6e60f08db14b0f7896c703f41fb6c4c2b7362fd6))
+
+
+### Miscellaneous
+
+* **Button:** convert button to use hooks ([19f85d3](https://www.github.com/reactstrap/reactstrap/commit/19f85d30d3c01f8f60762db55b123efddb4d152b))
+
+### [9.0.3](https://www.github.com/reactstrap/reactstrap/compare/v9.0.2...v9.0.3) (2022-05-26)
+
+
+### Bug Fixes
+
+* **#2501:** Since React 18, errors on Popover and Tooltip ([1110c9c](https://www.github.com/reactstrap/reactstrap/commit/1110c9c39f6018cc0289b419ba887adbe434e301))
+
+### [9.0.2](https://www.github.com/reactstrap/reactstrap/compare/v9.0.1...v9.0.2) (2022-04-13)
+
+
+### Bug Fixes
+
+* `form-row` was removed from Bootsttap 5 ([601845d](https://www.github.com/reactstrap/reactstrap/commit/601845d1c8b687d7c2a8494f5131c728ce1a532c))
+* **docs:** fixed naming in Accordion module ([29beb09](https://www.github.com/reactstrap/reactstrap/commit/29beb09ed4a353ebc2d77611a51cea4d34409bf6))
+* **FormGroup:** dont pass switch prop to tag [#2415](https://www.github.com/reactstrap/reactstrap/issues/2415) ([b63981e](https://www.github.com/reactstrap/reactstrap/commit/b63981eb54af34e1332dfb84c670e2cbca937ee8))
+
 ### [9.0.1](https://www.github.com/reactstrap/reactstrap/compare/v9.0.0...v9.0.1) (2021-11-12)
 
 
